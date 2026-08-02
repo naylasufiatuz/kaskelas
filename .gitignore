@@ -3,6 +3,7 @@
 /public/storage
 /storage/*.key
 .env
+.env.production
 .env.backup
 .phpunit.result.cache
 Homestead.json
@@ -15,5 +16,8 @@ yarn-error.log
 /storage/framework/sessions/*
 /storage/framework/views/*
 /storage/logs/*
-/bootstrap/cache/*
-/public/build/
+!/storage/framework/cache/data/.gitkeep
+!/storage/framework/sessions/.gitkeep
+!/storage/framework/views/.gitkeep
+!/storage/logs/.gitkeep
+/bootstrap/cache/*.php
